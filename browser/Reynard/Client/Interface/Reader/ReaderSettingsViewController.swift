@@ -109,14 +109,15 @@ final class ReaderSettingsViewController: UIViewController, UIPopoverPresentatio
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         brightnessAdjustmentEnded()
+        
+        if isBeingDismissed || presentingViewController == nil {
+            onVisibilityChanged?(false)
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         fontSizeDotsDismissal?.cancel()
-        if isBeingDismissed || presentingViewController == nil {
-            onVisibilityChanged?(false)
-        }
     }
     
     // MARK: - Presentation
