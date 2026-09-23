@@ -611,7 +611,8 @@ final class ReaderSettingsViewController: UIViewController, UIPopoverPresentatio
     
     @objc private func findInPage() {
         guard isCurrentReader else { return }
-        dismiss(animated: true, completion: onFindInPage)
+        onFindInPage?()
+        dismiss(animated: true)
     }
     
     @objc private func hideReader() {
