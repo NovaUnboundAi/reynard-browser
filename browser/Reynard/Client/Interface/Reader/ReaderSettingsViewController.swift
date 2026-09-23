@@ -159,6 +159,8 @@ final class ReaderSettingsViewController: UIViewController, UIPopoverPresentatio
         } else {
             modalPresentationStyle = .popover
             if #available(iOS 26.0, *) {
+                view.backgroundColor = .clear
+                backgroundView.effect = nil
                 configureOpaqueMaterialContainers()
             }
         }
