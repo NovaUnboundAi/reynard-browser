@@ -12209,64 +12209,6 @@
         }
       }
     },
-    "Hard Reload Page" : {
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vyčistit mezipaměť a znovu načíst stránku"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seite neu laden erzwingen"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hard Reload Page"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : ""
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ページを強制再読み込み"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Twarde Przeładowanie Strony"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : ""
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "强制重新载入页面"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "強制重新載入頁面"
-          }
-        }
-      }
-    },
     "Hide Reader" : {
       "localizations" : {
         "cs" : {
@@ -22901,6 +22843,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "顯示連結預覽"
+          }
+        }
+      }
+    },
+    "Show or Hide Reader" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show or Hide Reader"
           }
         }
       }
