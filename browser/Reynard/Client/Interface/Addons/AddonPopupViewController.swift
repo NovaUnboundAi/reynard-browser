@@ -114,6 +114,18 @@ final class AddonPopupViewController: UIViewController, ContentDelegate, Navigat
         }
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        guard size != view.bounds.size,
+              !isBeingPresented,
+              !isBeingDismissed,
+              presentingViewController != nil else {
+            return
+        }
+        
+        dismiss(animated: false)
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         if let outsideTapGestureRecognizer {
